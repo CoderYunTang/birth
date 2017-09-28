@@ -1,0 +1,140 @@
+body
+{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.meilove
+{
+	display: block;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width:50%;
+    height: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+     -webkit-text-stroke: 1px ##FF3366;
+     letter-spacing: 0.04em;
+     font-family:Arial,Helvetica,sans-serif;
+     line-height:1em;color:#FD6A62;
+     font-size: 50px;
+     text-align: center;
+     height: 50px;
+     width: 100%;  
+     
+     
+
+        
+        
+}
+.meilove1
+{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width:50%;
+    height: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+     -webkit-text-stroke: 1px #FF66FF;
+     letter-spacing: 0.04em;
+     font-family:Arial,Helvetica,sans-serif;
+     line-height:1em;color:#FD6A62;
+     font-size: 35px;
+     text-align: center;
+     height: 50px;
+     width: 100%;
+     display:none
+}
+.meilove2
+{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width:50%;
+    height: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+     -webkit-text-stroke: 1px #FAF2CC;
+     letter-spacing: 0.04em;
+     font-family:Arial,Helvetica,sans-serif;
+     line-height:1em;color:#FD6A62;
+     font-size: 35px;
+     text-align: center;
+     height: 50px;
+     width: 100%;
+     display:none
+}
+.meilove3
+{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width:50%;
+    height: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+     -webkit-text-stroke: 1px #66CCFF;
+     letter-spacing: 0.04em;
+     font-family:Arial,Helvetica,sans-serif;
+     line-height:1em;color:#FD6A62;
+     font-size: 35px;
+     text-align: center;
+     height: 50px;
+     width: 100%;
+     display:none
+}
+.meilove4
+{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width:50%;
+    height: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+     -webkit-text-stroke: 1px #FF0033	;
+     letter-spacing: 0.04em;
+     font-family:Arial,Helvetica,sans-serif;
+     line-height:1em;color:#FD6A62;
+     font-size: 35px;
+     text-align: center;
+     height: 50px;
+     width: 100%;
+     display:none
+}
+
+
+
+@keyframes myfirst
+{
+0%   {opacity: 1;}
+25%  {opacity: 0.75;}
+50%  {opacity: 0.5;}
+75%  {opacity: 0.25;}
+100% {opacity: 0;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {opacity: 1;}
+25%  {opacity: 0.75;}
+50%  {opacity: 0.5;}
+75%  {opacity: 0.25;}
+100% {opacity: 0;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {opacity: 1;}
+25%  {opacity: 0.75;}
+50%  {opacity: 0.5;}
+75%  {opacity: 0.25;}
+100% {opacity: 0;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {opacity: 1;}
+25%  {opacity: 0.75;}
+50%  {opacity: 0.5;}
+75%  {opacity: 0.25;}
+100% {opacity: 0;}
+}

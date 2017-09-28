@@ -1,0 +1,21 @@
+.breadcrumb > li + li:before {
+	content: " ";
+    color: #C0C0C0;
+}
+<<<<<<< HEAD
+.breadcrumb
+{
+	
+}
+=======
+>>>>>>> e5ec3980ee1fd898b01dc469f3b1ce0ad44470a9
+.privateA
+{
+	font-size: 24px;
+	color: #8C8C8C;
+}
+.privateAfs
+{
+	font-size: 14px;
+	color: #8C8C8C;
+}

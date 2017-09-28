@@ -1,0 +1,66 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.animsition
+{
+	
+}
+#page1
+{
+	background: #0ac2d2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#page2
+{
+	background: #7bb7fa;
+	width: 100%;
+	 height: 100%;
+	 position: absolute;
+}
+#page3
+{
+	background: #60d7a9;
+	width: 100%;
+	 height: 100%;
+	 position: absolute;
+}
+#page4
+{
+	background: #fdc162;
+	width: 100%;
+	 height: 100%;
+	 position: absolute;
+}
+#page5
+{
+	background: #fd6a62;
+	width: 100%;
+	 height: 100%;
+	 position: absolute;
+}
+#page6
+{
+	background: #f68dbb;
+	width: 100%;
+	 height: 100%;
+	 position: absolute;
+}

@@ -1,0 +1,117 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Happy Birthday</title>
+	<link rel="stylesheet" href="css/birthday.css" />
+</head>
+
+<body>
+	<div class="meier">
+
+		<div class="meilove">
+			梅
+		</div>
+		<div class="meilove1">生日快乐！</div>
+		<div class="meilove2">要幸福喔!</div>
+		<div class="meilove3">22</div>
+		<div class="meilove4">...</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.fireworks.js"></script>
+	<script type="text/javascript">
+	
+	var timer=window.setInterval("Mei()",1000);
+	var timer1;
+	var tcount=0
+	var meicount=0;
+	function Mei()
+	{
+		//autoPlay();
+	    window.clearInterval(timer);
+	    var div=$(".meilove");
+	    switch(tcount)
+	    {
+	    	case 1: div=$(".meilove1");break;
+	    	case 2:div=$(".meilove2");break;
+	    	case 3:div=$(".meilove3");break;
+	    	case 4:div=$(".meilove4");break;
+	    	case 5:div=$(".meilove4");break;
+	    }
+	    
+		
+        div.animate({opacity:'0.9'},300);
+        div.animate({opacity:'0.8'},300);
+        div.animate({opacity:'0.7'},300);
+        div.animate({opacity:'0.6'},300);
+        div.animate({opacity:'0.5'},300);
+        div.animate({opacity:'0.4'},300);
+        div.animate({opacity:'0.3'},300);
+        div.animate({opacity:'0.1',display:'none'},300,
+        function(){
+        	div.css("display","none");
+        	 switch(tcount)
+	        {
+	        	case 0:div.css("display","none");$(".meilove1").css("display","block");tcount=1;Mei();break;
+	    	    case 1: div.css("display","none");$(".meilove2").css("display","block");tcount=2;Mei();break;
+	    	    case 2:div.css("display","none");$(".meilove3").css("display","block");tcount=3;Mei();break;
+	    	    case 3:div.css("display","none");$(".meilove4").css("display","block");tcount=4;Mei();break;
+	    	    case 4:div.css("display","none");$(".meilove4").css("display","block");tcount=5;Mei();break;
+	    	    case 5:$('.meier').fireworks({ 
+		  sound: false, // sound effect
+		  opacity: 0.9, 
+		  width: '100%', 
+		  height: '100%' 
+		});timer=window.setInterval("ExitMei()",15000);;break;
+	        } 
+        	});
+	}
+	function autoPlay()
+    {
+    	//alert(123);
+      var audio =new Audio();
+      audio.src="music/meibirth.mp3";
+      audio.play();
+        
+    }
+
+    function ExitMei()
+    {
+    	window.opener=null;
+        window.open('','_self');
+        window.close();
+    }
+	
+		$('.meier').fireworks({ 
+		  sound: false, // sound effect
+		  opacity: 0.1, 
+		  width: '100%', 
+		  height: '100%' 
+		});
+	</script>
+</body>
+</html>
+=======
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>CoderYunTang的主页</title>
+	</head>
+	<link rel="stylesheet" href="publicStyle/css/bootstrap.min.css" />
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="publicStyle/js/bootstrap.min.js" ></script>
+	<link rel="stylesheet" href="css/index.css" />
+	<body>
+		<ol class="breadcrumb">
+           <li><a href="index.html" class="privateA">CoderYunTang</a></li>
+           <li><a href="mei.html" class="privateAfs" class="fs">M主页</a></li>
+        </ol>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=41666353&auto=1&height=66"></iframe>
+	</body>
+</html>
+>>>>>>> e5ec3980ee1fd898b01dc469f3b1ce0ad44470a9
