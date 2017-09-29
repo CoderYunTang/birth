@@ -4,7 +4,6 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Happy Birthday</title>
 	<link rel="stylesheet" href="css/birthday.css" />
@@ -20,18 +19,25 @@
 		<div class="meilove2">要幸福喔!</div>
 		<div class="meilove3">22</div>
 		<div class="meilove4">...</div>
+		<div class="meilove5">梅,生日快乐！</div>
 	</div>
 	<script type="text/javascript" src="js/jquery.min.js" ></script>
-	<script type="text/javascript" src="js/jquery.fireworks.js"></script>
+    <script type="text/javascript" src="js/jquery.fireworks.js"></script>
 	<script type="text/javascript">
 	
 	var timer=window.setInterval("Mei()",1000);
 	var timer1;
 	var tcount=0
 	var meicount=0;
+	var isplay=true;
 	function Mei()
 	{
-		//autoPlay();
+		if(isplay==true)
+		{
+			autoPlay();
+			isplay=false;
+		}
+		
 	    window.clearInterval(timer);
 	    var div=$(".meilove");
 	    switch(tcount)
@@ -62,20 +68,31 @@
 	    	    case 3:div.css("display","none");$(".meilove4").css("display","block");tcount=4;Mei();break;
 	    	    case 4:div.css("display","none");$(".meilove4").css("display","block");tcount=5;Mei();break;
 	    	    case 5:$('.meier').fireworks({ 
-		  sound: false, // sound effect
+		  sound: true, // sound effect
 		  opacity: 0.9, 
 		  width: '100%', 
 		  height: '100%' 
-		});timer=window.setInterval("ExitMei()",15000);;break;
+		});break;
 	        } 
         	});
 	}
+	
 	function autoPlay()
     {
     	//alert(123);
       var audio =new Audio();
       audio.src="music/meibirth.mp3";
       audio.play();
+      audio.loop=false;
+      audio.addEventListener('ended', function () {  
+        $('.meier').fireworks({ 
+		  sound: true, // sound effect
+		  opacity: 0.1, 
+		  width: '100%', 
+		  height: '100%' 
+		});
+		$(".meilove5").css("display","block");
+     }, false);
         
     }
 
@@ -87,7 +104,7 @@
     }
 	
 		$('.meier').fireworks({ 
-		  sound: false, // sound effect
+		  sound: true, // sound effect
 		  opacity: 0.1, 
 		  width: '100%', 
 		  height: '100%' 
