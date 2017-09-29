@@ -30,6 +30,7 @@
 	var tcount=0
 	var meicount=0;
 	var isplay=true;
+	var audio =new Audio();
 	function Mei()
 	{
 		if(isplay==true)
@@ -72,20 +73,34 @@
 		  opacity: 0.9, 
 		  width: '100%', 
 		  height: '100%' 
-		});break;
+		});timer=window.setInterval("hid0()",10000);break;
 	        } 
         	});
+	}
+	function hid0()
+	{
+		window.clearInterval(timer);
+		$(".meilove5").css("display","block");
+		$('.meier').fireworks({ 
+		  sound: true, // sound effect
+		  opacity: 0.2, 
+		  width: '100%', 
+		  height: '100%' 
+		});
 	}
 	
 	function autoPlay()
     {
     	//alert(123);
-      var audio =new Audio();
+      
       audio.src="music/meibirth.mp3";
       audio.play();
       audio.loop=false;
-      audio.addEventListener('ended', function () {  
-        $('.meier').fireworks({ 
+      
+        
+    }
+audio.addEventListener('ended', function () {  
+       $('.meier').fireworks({ 
 		  sound: true, // sound effect
 		  opacity: 0.1, 
 		  width: '100%', 
@@ -93,9 +108,6 @@
 		});
 		$(".meilove5").css("display","block");
      }, false);
-        
-    }
-
     function ExitMei()
     {
     	window.opener=null;
